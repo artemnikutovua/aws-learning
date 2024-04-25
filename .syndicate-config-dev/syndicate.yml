@@ -1,0 +1,9 @@
+account_id: '905418349556'
+deploy_target_bucket: syndicate-education-platform-custom-sandbox-artifacts-sbox02/a700bff2
+expiration: 2024-04-25 15:29:54.631177+00:00
+extended_prefix_mode: true
+iam_permissions_boundary: arn:aws:iam::905418349556:policy/eo_role_boundary
+project_path: /opt/projects/aws-web-project/task01
+region: eu-central-1
+resources_prefix: cmtr-a700bff2-
+use_temp_creds: false
