@@ -8,7 +8,7 @@ import com.syndicate.deployment.model.RetentionSetting;
 import java.util.HashMap;
 import java.util.Map;
 
-@LambdaHandler(lambdaName = "Hello_World",
+@LambdaHandler(lambdaName = "hello_world",
 	roleName = "Hello_World-role",
 	isPublishVersion = true,
 	aliasName = "${lambdas_alias_name}",
