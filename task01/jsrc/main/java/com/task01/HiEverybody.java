@@ -1,4 +1,4 @@
-package com.awslearning;
+package com.task01;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
@@ -20,7 +20,7 @@ public class HiEverybody implements RequestHandler<Object, Map<String, Object>> 
 		System.out.println("Hello from lambda");
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("statusCode", 200);
-		resultMap.put("message", "Hello from Lambda");
+		resultMap.put("body", "Hello from Lambda");
 		return resultMap;
 	}
 }
