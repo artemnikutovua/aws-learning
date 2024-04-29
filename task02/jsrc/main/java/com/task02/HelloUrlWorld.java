@@ -26,8 +26,8 @@ public class HelloUrlWorld implements RequestHandler<Object, Map<String, Object>
         resultMap.put("isBase64Encoded", false);
         resultMap.put("headers", headers);
        // resultMap.put("statusCode", 200);
-        resultMap.put("body", "{'statusCode':200,'message':'Hello from Lambda'}");
-       // resultMap.put("body", "{'statusCode':200,'message':'Hello from Lambda'}");
+        resultMap.put("statusCode", 200);
+        resultMap.put("message", "Hello from Lambda");
         return resultMap;
     }
 }
