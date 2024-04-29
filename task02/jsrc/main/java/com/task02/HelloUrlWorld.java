@@ -19,14 +19,15 @@ import java.util.Map;
 public class HelloUrlWorld implements RequestHandler<Object, Map<String, Object>> {
 
     public Map<String, Object> handleRequest ( Object request, Context context ) {
-        Map<String> headers = new HashMap<>();
+        Map<String,String> headers = new HashMap<>();
         headers.put("Content-Type", "application/json");
         System.out.println("Hello from lambda");
         Map<String, Object> resultMap = new HashMap<String, Object>();
-        resultMap.put("isBase64Encoded", false);
-        resultMap.put("headers", headers);
+        //resultMap.put("isBase64Encoded", false);
+        //resultMap.put("headers", headers);
         resultMap.put("statusCode", 200);
-        resultMap.put("body", "{\"message\":\"Hello from Lambda\"}");
+        resultMap.put("message", "Hello from Lambda");
+       // resultMap.put("body", "{'statusCode':200,'message':'Hello from Lambda'}");
         return resultMap;
     }
 }
