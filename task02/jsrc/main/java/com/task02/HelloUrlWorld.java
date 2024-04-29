@@ -21,7 +21,7 @@ public class HelloUrlWorld implements RequestHandler<Object, Map<String, Object>
     public Map<String, Object> handleRequest ( Object request, Context context ) {
         Map<String,String> headers = new HashMap<>();
         Map<String,Object> body = new HashMap<>();
-        body.put("message","Hello from URL");
+        body.put("message","Hello from Lambda");
         body.put("statusCode", 200);
         headers.put("Content-Type", "application/json");
         System.out.println("Hello from lambda");
